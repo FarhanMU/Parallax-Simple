@@ -1,0 +1,93 @@
+html{
+	position: relative;
+}
+
+body{
+	margin-bottom: 120px;
+	margin-top: 30px
+}
+
+.navbar-dark .navbar-brand {
+	color: #999
+}
+
+.navbar-dark .navbar-brand:hover {
+	color: #ccc
+}
+
+.pKiri , .pKanan{
+	opacity: 0;
+	transform: translate(-50px, 0) rotate(15deg);
+	transition: 1s;
+}
+
+.pKanan {
+	transform : translate(50px, 0) rotate(-15deg);
+}
+
+.pKanan.show , .pKiri.show{
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+.portfolio .img-thumbnail{
+	opacity: 0;
+	transition: .5s;
+	transform: translate(0, -40px);
+}
+
+.portfolio .img-thumbnail.show{
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+.jumbotron {
+	height: 400px;
+	background-image: url(asset/header-bg.jpg);
+	background-attachment: fixed;
+	background-position: 0 -200px;
+	color: #eaeaea;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+	overflow: hidden;
+}
+
+.jumbotron h1 , .jumbotron p {
+	text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+.jumbotron img{
+	width: 200px;
+	height: 200px;
+	border: solid 6px #eaeaea
+}
+
+hr{
+	width: 250px;
+	border-top: solid 3px #999
+}
+
+section{
+	min-height: 600px
+}
+
+.contact{
+	min-height: 800px;
+}
+
+.portfolio{
+	background-color: #eee
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 130px;
+	background: #333;
+	padding: 30px
+}
+
+footer p {
+	color: #aaa;
+	font-size: 1em 
+}
